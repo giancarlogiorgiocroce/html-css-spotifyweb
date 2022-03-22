@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+:root{
+    --dark-blue: rgb(20, 25, 34);
+    --dark-grey: rgb(40, 40, 40);
+    --lemon-green: rgb(182, 255, 48);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
