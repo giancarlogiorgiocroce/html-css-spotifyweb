@@ -29,17 +29,22 @@ aside{
     border-left: 3px solid black;
 }
 
-.aside-nav li>a,
-.aside-nav li>i{
-    color: grey;
-}
-
+    /* Pacchetto active ed hover */
 .aside-nav li:active{
     border-left: 3px solid var(--lemon-green);
 }
 
-.aside-nav li:active a,
-.aside-nav li:active i{
+.aside-nav li.active{
+    border-left: 3px solid var(--lemon-green);
+    color: white;
+}
+.aside-nav li.active>i,
+.aside-nav li.active>a{
+    color: white;
+}
+
+.aside-nav li:hover a,
+.aside-nav li:hover i{
     color: white;
 }
 
@@ -77,24 +82,24 @@ aside div:nth-child(4){
     border-bottom: 1px solid grey;
 }
 
-#download-app>i,
-#download-app a{
-    color: grey;
+#download-app .fa-circle-down{
+    margin-right: 5px;
+    font-size: 12px;
 }
 
 #user{
     padding: 15px 0 0;
-    font-weight: 900;
+}
+
+#user .fa-circle-user{
+    font-size: 22px;
     color: white;
+    vertical-align: middle;
 }
 
-.fa-circle-down{
-    margin-right: 7.5px;
-}
-
-.fa-circle-user{
-    font-size: 18px;
-    margin-right: 5px;
+#user h4{
+    display: inline-block;
+    font-weight: 900;
 }
 /* /ASIDE */
 
@@ -115,6 +120,20 @@ section{
 
     justify-content: flex-end;
     align-items: center;
+}
+
+.spotify-premium a{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 900;
+    padding: 10px 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.spotify-premium a:hover{
+    transform: scale(1.2);
 }
 /*
     /MAIN

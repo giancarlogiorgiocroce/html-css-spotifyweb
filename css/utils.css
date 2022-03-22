@@ -16,11 +16,6 @@
     cursor: pointer;
 }
 
-/* Dimensioni */
-.w17{
-    width: calc(100% / 6);
-}
-
 /* Debug */
 .debug{
     background-color: rgba(255, 255, 255, 0.2);
