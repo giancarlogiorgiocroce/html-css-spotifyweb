@@ -6,6 +6,7 @@ main{
     height: calc(100vh - 50px);
 }
 
+
 /* ASIDE */
 aside{
     background-color: black;
@@ -17,15 +18,43 @@ aside{
     font-size: 12px;
 }
 
-.aside-nav{
-    padding: 7.5px;
+.aside-nav i{
+    font-size: 18px;
+    vertical-align: middle;
 }
 
 .aside-nav li, 
-.aside-nav h3{
-    padding: 5px 0;
+.aside-nav h4{
+    padding: 7.5px;
+    border-left: 3px solid black;
 }
 
+.aside-nav li>a,
+.aside-nav li>i{
+    color: grey;
+}
+
+.aside-nav li:active{
+    border-left: 3px solid var(--lemon-green);
+}
+
+.aside-nav li:active a,
+.aside-nav li:active i{
+    color: white;
+}
+
+    /* Primo blocco aside-nav */
+.aside-nav img{
+    width: 75%;
+    padding: 15px 7.5px;
+}
+
+    /* Secondo blocco aside-nav */
+.fa-lines-leaning{
+    transform: rotateY(180deg);
+}
+
+    /* Terzo blocco aside-nav */
 .aside-nav.playlist{
     height: 100%;
     min-height: 100px;
@@ -33,9 +62,43 @@ aside{
     overflow: auto;
 }
 
-.non-playlist img{
-    width: 75%;
+.aside-nav .fa-square-plus{
+    font-size: 30px;
+    margin-right: 7.5px;
 }
+
+    /* Quarto blocco aside-nav */
+aside div:nth-child(4){
+    padding: 7.5px;
+}
+
+#download-app{
+    padding: 7.5px 0;
+    border-bottom: 1px solid grey;
+}
+
+#download-app>i,
+#download-app a{
+    color: grey;
+}
+
+#user{
+    padding: 15px 0 0;
+    font-weight: 900;
+    color: white;
+}
+
+.fa-circle-down{
+    margin-right: 7.5px;
+}
+
+.fa-circle-user{
+    font-size: 18px;
+    margin-right: 5px;
+}
+/* /ASIDE */
+
+
 /* SECTION */
 section{
     width: 100%/*calc(100% - 200px)*/;
@@ -44,6 +107,7 @@ section{
     /* Fascia superiore */
 .spotify-premium{
     width: 100%;
+    height: 65px;
     padding-right: 200px;
 
     position: fixed;
