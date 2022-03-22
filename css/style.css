@@ -6,16 +6,6 @@ main{
     height: calc(100vh - 50px);
 }
 
-/* SPOTIFY-PREMIUM */
-.spotify-premium{
-    width: 100%;
-    position: fixed;
-    background-color: var(--overlay);
-
-    justify-content: flex-end;
-    align-items: center;
-}
-
 /* ASIDE */
 aside{
     background-color: black;
@@ -23,18 +13,44 @@ aside{
 
     flex-direction: column;
     justify-content: space-between;
+
+    font-size: 12px;
+}
+
+.aside-nav{
+    padding: 7.5px;
+}
+
+.aside-nav li, 
+.aside-nav h3{
+    padding: 5px 0;
 }
 
 .aside-nav.playlist{
     height: 100%;
+    min-height: 100px;
 
     overflow: auto;
 }
 
+.non-playlist img{
+    width: 75%;
+}
 /* SECTION */
 section{
-    width: 100%;
+    width: 100%/*calc(100% - 200px)*/;
     overflow: auto;
+}
+    /* Fascia superiore */
+.spotify-premium{
+    width: 100%;
+    padding-right: 200px;
+
+    position: fixed;
+    background-color: var(--overlay);
+
+    justify-content: flex-end;
+    align-items: center;
 }
 /*
     /MAIN
