@@ -11,11 +11,6 @@
     flex-shrink: 0;
 }
 
-/* Dinamicità */
-.active:hover{
-    cursor: pointer;
-}
-
 /* Debug */
 .debug{
     background-color: rgba(255, 255, 255, 0.2);

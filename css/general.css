@@ -21,6 +21,15 @@ a{
     text-decoration: none;
 }
 
+li:hover{
+    cursor: pointer;
+}
+
+li:hover a,
+li:hover i{
+    color: white;
+}
+
 h4{
     color: white;
 }

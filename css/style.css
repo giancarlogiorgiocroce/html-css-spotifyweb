@@ -43,11 +43,6 @@ aside{
     color: white;
 }
 
-.aside-nav li:hover a,
-.aside-nav li:hover i{
-    color: white;
-}
-
     /* Primo blocco aside-nav */
 .aside-nav img{
     width: 75%;
@@ -109,7 +104,7 @@ section{
     width: 100%/*calc(100% - 200px)*/;
     overflow: auto;
 }
-    /* Fascia superiore */
+    /* Fascia upgrade */
 .spotify-premium{
     width: 100%;
     height: 65px;
@@ -128,12 +123,48 @@ section{
     font-weight: 900;
     padding: 10px 30px;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 20px;
 }
 
 .spotify-premium a:hover{
     transform: scale(1.2);
+}
+
+    /* Section nav */
+.section-nav{
+    padding-top: 75px;
+    justify-content: center;
+}
+
+.section-nav ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-nav li{
+    padding: 0 10px;
+}
+
+.section-nav a{
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.section-nav div{
+    width: 40%;
+    margin: 3px auto;
+}
+
+.section-nav div.active{
+    border-bottom: 2px solid var(--lemon-green);
+}
+
+.section-nav li:active div{
+    width: 40%;
+    margin: 3px auto;
+    border-bottom: 2px solid var(--lemon-green);
 }
 /*
     /MAIN
