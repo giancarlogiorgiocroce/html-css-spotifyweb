@@ -10,6 +10,7 @@
     --dark-blue: rgb(20, 25, 34);
     --dark-grey: rgb(40, 40, 40);
     --lemon-green: rgb(182, 255, 48);
+    --overlay: rgba(0, 0, 0, 0.5);
 }
 
 ul{
