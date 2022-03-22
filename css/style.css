@@ -101,7 +101,7 @@ aside div:nth-child(4){
 
 /* SECTION */
 section{
-    width: 100%/*calc(100% - 200px)*/;
+    width: calc(100% - 200px);
     overflow: auto;
 }
     /* Fascia upgrade */
@@ -165,6 +165,42 @@ section{
     width: 40%;
     margin: 3px auto;
     border-bottom: 2px solid var(--lemon-green);
+}
+
+    /* Section History */
+.section-history{
+    padding: 10px;
+}
+
+.section-history>h4{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+div.row{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.music{
+    flex-direction: column;
+    align-items: center;
+}
+
+div.music img{
+    height: 200px;
+    width: 200px;
+}
+
+div.music h4{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+div.music p{
+    font-size: 11px;
+    margin-top: 5px;
 }
 /*
     /MAIN
