@@ -11,15 +11,8 @@
     flex-shrink: 0;
 }
 
-/* Barre di progressione musica */
-.progression-display-now{
-    border-top: 3px solid white;
-    border-radius: 1px;
-}
-
-.progression-display-total{
-    border-top: 3px solid grey;
-    border-radius: 1px;
+.invisible{
+    display: none;
 }
 
 /* Debug */

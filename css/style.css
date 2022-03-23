@@ -181,26 +181,27 @@ section{
     font-weight: 900;
 }
 
-div.row{
+.row{
     justify-content: space-between;
 }
 
-div.music{
+.music{
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
-div.music img{
+.music img{
     width: 10vw;
     /* height: 10vw; */
 }
 
-div.music h4{
+.music h4{
     font-size: 15px;
     margin-top: 10px;
 }
 
-div.music p{
+.music p{
     font-size: 11px;
     margin-top: 5px;
 }
@@ -237,6 +238,42 @@ footer{
 
 .footer-nav > div{
     align-items: center;
+}
+
+        /* Barre di progressione musica */
+.progression-display-now{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.progression-display-total{
+    border: 2px solid grey;
+    background-color: grey;
+    border-radius: 1px;
+}
+
+.pin{
+    width: 1vw;
+    height: 1vw;
+    border: 2px solid var(--lemon-green);
+    background-color: var(--lemon-green);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+.mediaplayer:hover .progression-display-now,
+.music-progression-container:hover .progression-display-now{
+    border: 2px solid var(--lemon-green);
+    background-color: var(--lemon-green);
+    border-radius: 1px;
+}
+
+.mediaplayer:hover .pin,
+.music-progression-container:hover .pin{
+    display: inline;
 }
 
     /* Footer nav left (info brano attuale) */
@@ -299,6 +336,7 @@ footer{
         /* Parte inferiore (barre) */
 .mediaplayer{
     flex-direction: row;
+    justify-content: center;
 }
 
 .mediaplayer.status span{
