@@ -3,7 +3,7 @@
 */
 main{
     background-color: var(--dark-blue);
-    height: calc(100vh - 50px);
+    height: calc(100vh - 75px);
 }
 
 
@@ -224,14 +224,15 @@ div.music p{
 footer{
     background-color: var(--dark-grey);
     font-size: 12px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
 }
 
 .footer-container{
+    height: 75px;
     justify-content: space-between;
-}
-
-.footer-nav{
-    width: calc(100% / 8);
+    align-items: center;
 }
 
 .footer-nav > div{
@@ -239,8 +240,12 @@ footer{
 }
 
     /* Footer nav left (info brano attuale) */
+.footer-nav.left{
+    justify-content: space-between;
+}
+
 .footer-nav.left img{
-    width: 33%;
+    width: 3vw;
     padding: 0 5px;
 }
 
@@ -249,8 +254,12 @@ footer{
     color: white;
 }
 
+.icons-container{
+    margin-left: 15px;
+}
+
 .footer-nav.left i{
-    margin-right: 10px;
+    margin: 0 5px;
 }
 
 .footer-nav.left i:hover{
@@ -259,7 +268,51 @@ footer{
 }
 
     /* footer nav center (navigazione brano) */
+.footer-nav.center{
+    flex-direction: column;
+}
 
+        /* Parte superiore (icone) */
+.mediaplayer.buttons{
+    justify-content: center;
+    align-items: center;
+}
+
+.mediaplayer.buttons i{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.mediaplayer.buttons a:nth-child(3) i{
+    font-size: 22px;
+}
+
+.mediaplayer.buttons a:nth-child(3) i:hover{
+    transform: scale(1.2);
+}
+
+.mediaplayer.buttons a:nth-child(5) i{
+    transform: rotatey(180deg);
+}
+
+        /* Parte inferiore (barre) */
+.mediaplayer{
+    flex-direction: row;
+}
+
+.mediaplayer.status span{
+    color: white;
+    margin: 0 15px;
+}
+
+.mediaplayer.status .progression-display-now{
+    width: 4vw;
+}
+
+.mediaplayer.status .progression-display-total{
+    width: 16vw;
+}
 
     /* footer nav right (altre impostazioni) */
 .footer-nav.right i{
@@ -271,16 +324,13 @@ footer{
     justify-content: center;
 }
 
-.progression-display.now{
+.footer-nav.right .progression-display-now{
     width: 2vw;
-    border-top: 3px solid white;
-    border-radius: 1px;
 }
 
-.progression-display.total{
+.footer-nav.right .progression-display-total{
     width: 4vw;
-    border-top: 3px solid grey;
-    border-radius: 1px;
+    margin-right: 5px;
 }
 /*
     /FOOTER

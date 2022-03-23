@@ -232,8 +232,9 @@
     <!-- Barra inferiore -->
     <footer>
 
-        <div class="debug h50 footer-container flex">
+        <div class="debug footer-container flex">
 
+            <!-- Brano corrente -->
             <div class="debug footer-nav left flex flex-static">
                 <div class="debug flex">
                     <img src="img/yes-mom.jpg" alt="tessa violet">
@@ -242,16 +243,42 @@
                         <a href="#">Yes Mom</a>
                     </div>
                 </div>
-                <div class="debug flex">
+                <div class="debug flex icons-container">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
+            <!-- /Brano corrente -->
 
+            <!-- Navigazione brano -->
             <div class="debug footer-nav center flex">
-                f2
+                <div class="debug mediaplayer buttons flex">
+                    <a href="#">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-backward-step"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-forward-step"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </a>
+                </div>
+                <div class="debug mediaplayer status flex">
+                    <span>0:25</span>
+                    <div class="debug progression-display-now"></div>
+                    <div class="debug progression-display-total"></div>
+                    <span>4:35</span>
+                </div>
             </div>
+            <!-- /Navigazione brano -->
 
+            <!-- Altre impostazioni -->
             <div class="debug footer-nav right flex flex-static">
                 <div class="flex">
                     <i class="fa-solid fa-list"></i>
@@ -259,10 +286,11 @@
                     <i class="fa-solid fa-volume-high"></i>
                 </div>
                 <div class="music-progression-container flex">
-                    <div class="debug progression-display now"></div>
-                    <div class="debug progression-display total"></div>
+                    <div class="debug progression-display-now"></div>
+                    <div class="debug progression-display-total"></div>
                 </div>
             </div>
+            <!-- /Altre impostazioni -->
 
         </div>
 

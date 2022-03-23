@@ -11,6 +11,17 @@
     flex-shrink: 0;
 }
 
+/* Barre di progressione musica */
+.progression-display-now{
+    border-top: 3px solid white;
+    border-radius: 1px;
+}
+
+.progression-display-total{
+    border-top: 3px solid grey;
+    border-radius: 1px;
+}
+
 /* Debug */
 /* .debug{
     background-color: rgba(255, 255, 255, 0.2);
