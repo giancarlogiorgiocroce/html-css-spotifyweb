@@ -107,7 +107,7 @@ section{
     /* Fascia upgrade */
 .spotify-premium{
     width: 100%;
-    height: 65px;
+    height: 60px;
     padding-right: 200px;
 
     position: fixed;
@@ -122,6 +122,7 @@ section{
     font-size: 10px;
     font-weight: 900;
     padding: 10px 30px;
+    margin-right: 30px;
     color: white;
     border: 2px solid white;
     border-radius: 20px;
@@ -133,7 +134,7 @@ section{
 
     /* Section nav */
 .section-nav{
-    padding-top: 75px;
+    padding-top: 65px;
     justify-content: center;
 }
 
@@ -167,20 +168,21 @@ section{
     border-bottom: 2px solid var(--lemon-green);
 }
 
-    /* Section History */
-.section-history{
+    /* Comuni a tutte le playlist */
+.section-history,
+.section-row{
     padding: 10px;
 }
 
-.section-history>h4{
-    margin: 15px 0;
+.section-history>h4,
+.section-row>h4{
+    margin: 5px 0;
     font-size: 20px;
     font-weight: 900;
 }
 
 div.row{
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 div.music{
@@ -189,7 +191,8 @@ div.music{
 }
 
 div.music img{
-    max-width: 12vw;
+    width: 10vw;
+    /* height: 10vw; */
 }
 
 div.music h4{
@@ -201,6 +204,18 @@ div.music p{
     font-size: 11px;
     margin-top: 5px;
 }
+
+    /* Section History */
+
+    /* Section Row (Creati per, Artisti popolari) */
+.section-row{
+    width: 33%;
+}
+
+.section-row p{
+    margin-bottom: 15px;
+}
+
 /*
     /MAIN
 */
