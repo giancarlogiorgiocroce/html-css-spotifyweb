@@ -50,7 +50,9 @@ aside{
 }
 
 i.fa-spotify{
-    display: none;
+    color: white;
+    font-size: 22px;
+    padding: 15px 7.5px;
 }
 
     /* Secondo blocco aside-nav */

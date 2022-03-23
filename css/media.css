@@ -5,11 +5,18 @@
     .music img{
         width: 17vw;
     }
+    .footer-nav.left img{
+        width: 5vw;
+    }
+    
 }
 
 @media screen and (max-width: 720px) {
     .music img{
         width: 25vw;
+    }
+    .footer-nav.left img{
+        width: 7vw;
     }
 }
 
@@ -25,16 +32,13 @@
     }
     aside li>a,
     aside li>h4,
-    .aside-nav:first-of-type,
+    .aside-nav img,
     .aside-nav.playlist{
         display: none;
     }
-    aside i{
-        display: block;
-    }
     aside{
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     .aside-nav ul>li,
     .aside-nav li.active{
@@ -48,7 +52,17 @@
         align-items: center;
         justify-content: center;
     }
-    i.fa-spotify{
+    .fa-spotify{
         display: inline-block;
+    }
+    .aside-nav:last-child{
+        position: absolute;
+        bottom: 75px;
+    }
+    .fa-circle-down{
+        padding-left: 4px;
+    }
+    .footer-nav.left img{
+        width: 9vw;
     }
 }
