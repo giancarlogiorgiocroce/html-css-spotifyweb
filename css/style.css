@@ -205,8 +205,6 @@ div.music p{
     margin-top: 5px;
 }
 
-    /* Section History */
-
     /* Section Row (Creati per, Artisti popolari) */
 .section-row{
     width: 33%;
@@ -215,7 +213,6 @@ div.music p{
 .section-row p{
     margin-bottom: 15px;
 }
-
 /*
     /MAIN
 */
@@ -226,6 +223,7 @@ div.music p{
 */
 footer{
     background-color: var(--dark-grey);
+    font-size: 12px;
 }
 
 .footer-container{
@@ -233,7 +231,56 @@ footer{
 }
 
 .footer-nav{
-    width: calc(100% / 6);
+    width: calc(100% / 8);
+}
+
+.footer-nav > div{
+    align-items: center;
+}
+
+    /* Footer nav left (info brano attuale) */
+.footer-nav.left img{
+    width: 33%;
+    padding: 0 5px;
+}
+
+.song-details a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-nav.left i{
+    margin-right: 10px;
+}
+
+.footer-nav.left i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+    /* footer nav center (navigazione brano) */
+
+
+    /* footer nav right (altre impostazioni) */
+.footer-nav.right i{
+    color: white;
+    margin-right: 10px;
+}
+
+.music-progression-container{
+    justify-content: center;
+}
+
+.progression-display.now{
+    width: 2vw;
+    border-top: 3px solid white;
+    border-radius: 1px;
+}
+
+.progression-display.total{
+    width: 4vw;
+    border-top: 3px solid grey;
+    border-radius: 1px;
 }
 /*
     /FOOTER
