@@ -1,0 +1,54 @@
+@media screen and (max-width: 1080px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    .music img{
+        width: 17vw;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .music img{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    aside{
+        width: 50px;
+    }
+    section{
+        width: calc(100% - 50px);
+    }
+    .spotify-premium{
+        padding-right: 50px;
+    }
+    aside li>a,
+    aside li>h4,
+    .aside-nav:first-of-type,
+    .aside-nav.playlist{
+        display: none;
+    }
+    aside i{
+        display: block;
+    }
+    aside{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .aside-nav ul>li,
+    .aside-nav li.active{
+        margin: 0;
+        padding: 10px;
+        border: none;
+    }
+    aside ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    i.fa-spotify{
+        display: inline-block;
+    }
+}

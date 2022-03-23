@@ -49,6 +49,10 @@ aside{
     padding: 15px 7.5px;
 }
 
+i.fa-spotify{
+    display: none;
+}
+
     /* Secondo blocco aside-nav */
 .fa-lines-leaning{
     transform: rotateY(180deg);
@@ -72,27 +76,27 @@ aside div:nth-child(4){
     padding: 7.5px;
 }
 
-#download-app{
+.download-app{
     padding: 7.5px 0;
     border-bottom: 1px solid grey;
 }
 
-#download-app .fa-circle-down{
+.download-app .fa-circle-down{
     margin-right: 5px;
     font-size: 12px;
 }
 
-#user{
+.user{
     padding: 15px 0 0;
 }
 
-#user .fa-circle-user{
-    font-size: 22px;
+.user .fa-circle-user{
+    font-size: 20px;
     color: white;
     vertical-align: middle;
 }
 
-#user h4{
+.user h4{
     display: inline-block;
     font-weight: 900;
 }
@@ -182,7 +186,7 @@ section{
 }
 
 .row{
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .music{
@@ -192,8 +196,8 @@ section{
 }
 
 .music img{
-    width: 10vw;
-    /* height: 10vw; */
+    width: 14vw;
+    padding: 0 5%;
 }
 
 .music h4{
@@ -207,10 +211,6 @@ section{
 }
 
     /* Section Row (Creati per, Artisti popolari) */
-.section-row{
-    width: 33%;
-}
-
 .section-row p{
     margin-bottom: 15px;
 }
