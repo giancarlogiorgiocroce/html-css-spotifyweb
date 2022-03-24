@@ -1,9 +1,13 @@
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
     .row{
         flex-wrap: wrap;
     }
     .music img{
         width: 17vw;
+    }
+    .overlay {
+        width: 17vw;
+        height: 17vw;
     }
     .footer-nav.left img{
         width: 5vw;
@@ -14,6 +18,13 @@
 @media screen and (max-width: 720px) {
     .music img{
         width: 25vw;
+    }
+    .overlay {
+        width: 25vw;
+        height: 25vw;
+    }
+    .music i{
+        font-size: 30px;
     }
     .footer-nav.left img{
         width: 7vw;
@@ -58,6 +69,7 @@
     .aside-nav:last-child{
         position: absolute;
         bottom: 75px;
+        left: 0;
     }
     .fa-circle-down{
         padding-left: 4px;

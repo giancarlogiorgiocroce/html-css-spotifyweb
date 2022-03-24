@@ -13,7 +13,7 @@ aside{
     width: 200px;
 
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     font-size: 12px;
 }
@@ -61,11 +61,13 @@ i.fa-spotify{
 }
 
     /* Terzo blocco aside-nav */
-.aside-nav.playlist{
-    height: 100%;
-    min-height: 100px;
+/* .aside-nav.playlist{
+    max-height: 50vh;
+} */
 
-    overflow: auto;
+.aside-nav.playlist ul{
+    max-height: 50vh;
+    overflow-y: scroll;
 }
 
 .aside-nav .fa-square-plus{
@@ -74,7 +76,7 @@ i.fa-spotify{
 }
 
     /* Quarto blocco aside-nav */
-aside div:nth-child(4){
+.aside-nav:last-child{
     padding: 7.5px;
 }
 
@@ -194,12 +196,11 @@ section{
 .music{
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding: 10px 7.5px 0 0;
 }
 
 .music img{
-    width: 14vw;
-    padding: 0 5%;
+    width: 13vw;
 }
 
 .music h4{
@@ -210,6 +211,30 @@ section{
 .music p{
     font-size: 11px;
     margin-top: 5px;
+}
+
+        /* Music overlay */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 13vw;
+    height: 13vw;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50% -50%);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.music i{
+    font-size: 50px;
+    color: white;
+}
+
+.music:hover .overlay{
+    display: flex;
 }
 
     /* Section Row (Creati per, Artisti popolari) */
@@ -246,13 +271,13 @@ footer{
 .progression-display-now{
     border: 2px solid white;
     background-color: white;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 .progression-display-total{
-    border: 2px solid grey;
+    border: 1px solid grey;
     background-color: grey;
-    border-radius: 1px;
+    border-radius: 5px;
 }
 
 .pin{
@@ -262,7 +287,7 @@ footer{
     background-color: var(--lemon-green);
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: 0%;
     left: 25%;
 }
 
