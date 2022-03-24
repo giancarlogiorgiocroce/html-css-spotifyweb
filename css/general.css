@@ -21,12 +21,15 @@ a{
     text-decoration: none;
 }
 
-li:hover{
+li:hover,
+.new-playlist:hover{
     cursor: pointer;
 }
 
 li:hover a,
-li:hover i{
+li:hover i,
+.new-playlist:hover>a,
+.new-playlist:hover>i{
     color: white;
 }
 
