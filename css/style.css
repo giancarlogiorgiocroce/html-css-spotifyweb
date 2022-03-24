@@ -50,6 +50,7 @@ aside{
     /* Primo blocco aside-nav */
 .aside-nav img{
     width: 75%;
+    padding: 0 10px;
 }
 
 i.fa-spotify{
@@ -102,7 +103,7 @@ i.fa-spotify{
 }
 
 .user h4{
-    display: inline-block;
+    display: inline;
     font-weight: 900;
 }
 /* /ASIDE */
@@ -284,12 +285,14 @@ footer{
 .pin{
     width: 1vw;
     height: 1vw;
-    border: 2px solid var(--lemon-green);
-    background-color: var(--lemon-green);
+    border: 2px solid white;
+    background-color: white;
     border-radius: 50%;
+
     position: absolute;
-    top: 0%;
-    left: 25%;
+    bottom: 0;
+    left: 100%;
+    transform: translatey(50%);
 }
 
 .mediaplayer:hover .progression-display-now,
